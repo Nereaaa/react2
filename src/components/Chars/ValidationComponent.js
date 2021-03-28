@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-export default class ValidationComponent extends React.Component{
+class ValidationComponent extends React.Component{
     render(){
         let mensaje = null;
         if(this.props.longitud<=5){
@@ -17,3 +17,4 @@ export default class ValidationComponent extends React.Component{
         );
     }
 }
+export default ValidationComponent;

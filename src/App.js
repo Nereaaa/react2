@@ -3,11 +3,10 @@ import './App.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Form} from 'react-bootstrap';
 import CharList from './components/Chars/CharList';
-import ValidationComponent from './components/ValidationComponent';
+import ValidationComponent from './components/Chars/ValidationComponent';
 
 
-
-export class App extends React.Component {
+class App extends React.Component {
   
   constructor(props){
     super(props); 
@@ -46,7 +45,7 @@ export class App extends React.Component {
         </div>
       </div>
     );
-    }
+  }
 }
 
 export default App;

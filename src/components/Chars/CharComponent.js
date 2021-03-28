@@ -5,16 +5,17 @@ import clases from './CharComponent.module.css';
 import Button from 'react-bootstrap/Button';
 
 
-export default class CharComponent extends React.Component{
+class CharComponent extends React.Component{
 
     render(){
         return(
             <Ponclase clases={clases.CharComponent}>
                 <div>
-                    <Button variant="light" onClick={()=> this.props.parent.borrarLetra(this.props.index)}>{this.props.letter}</Button>
+                    <Button variant="light" onClick={()=> this.props.parent.borrarLetra(this.props.indice)}>{this.props.letra}</Button>
                 </div> 
             </Ponclase>
           
         );
     }
 }
+export default CharComponent;
