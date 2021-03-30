@@ -3,6 +3,7 @@ import './App.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Form} from 'react-bootstrap';
 import CharList from './components/Chars/CharList';
+import Header from './Header/Header';
 import ValidationComponent from './components/Chars/ValidationComponent';
 
 
@@ -34,6 +35,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="container-sm p-5 text-center">
+          <Header titulo="CONTADOR DE CARÁCTERES"/>
           <Form>
             <Form.Control type="text" placeholder="Introduzca texto" value={this.state.texto} onChange={this.actualizarCampos}/>
           </Form>
